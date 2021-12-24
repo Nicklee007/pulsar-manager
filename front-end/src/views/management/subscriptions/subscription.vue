@@ -474,7 +474,7 @@ export default {
       peekMessagesOnCluster(
         this.getCurrentCluster(),
         this.postForm.persistent,
-        this.tenantNamespaceTopic,
+        this.getFullTopic(),
         this.postForm.subscription,
         this.form.peekNumMessages).then(response => {
         if (!response.data) return
